@@ -65,7 +65,7 @@ clean:
 #########################################################################
 
 flash: all
-	avrdude -F -p $(MCU_AVRDUDE) -P $(USB_DEVICE) -c stk500v2    -U flash:w:$(PROJECT).hex
+	avrdude -F -p $(MCU_AVRDUDE) -P usb -c dragon_isp    -U flash:w:$(PROJECT).hex
 	#avrdude -p $(MCU_AVRDUDE) -c usbtiny    -U flash:w:$(PROJECT).hex
 
 fuse:
