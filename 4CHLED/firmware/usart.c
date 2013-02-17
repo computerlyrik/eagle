@@ -48,6 +48,7 @@ void USART0_Init (void)
 
 	UBRR0H = 0;
 	//UBRR0L = 4;//500000
+	//UBRR0L = 10;//230.4k
 	UBRR0L = 21;//115200
 
 	//#if USE_2X
