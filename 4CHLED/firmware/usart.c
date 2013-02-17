@@ -47,8 +47,8 @@ void USART0_Init (void)
 	//	UBRR0L = UBRRL_VALUE;
 
 	UBRR0H = 0;
-	UBRR0L = 4;//500000
-	//UBRR0L = 21;//115200
+	//UBRR0L = 4;//500000
+	UBRR0L = 21;//115200
 
 	//#if USE_2X
 	UCSR0A |= (1 << U2X0);	// enable double speed operation
